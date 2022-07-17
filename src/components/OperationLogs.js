@@ -15,9 +15,9 @@ const OperationLogs = () => {
           </tr>
         </thead>
         <tbody>
-          {state.operationLogs.map((operationLog, index) => (
-            <OperationLog key={index} operationLog={operationLog} />
-          ))}
+          {state.operationLogs.map((operationLog, index) => {
+            return <OperationLog key={index} operationLog={operationLog} />;
+          })}
         </tbody>
       </table>
     </>
